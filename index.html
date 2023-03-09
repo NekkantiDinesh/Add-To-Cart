@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Groceries</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        form {
+            border: none;
+            padding: 20px;
+            width: 1200px;
+            height: 75%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div th:replace="~{header :: header}"></div>
+    <div class>
+
+
+
+        <form id="veggiescart" action="#" method="post">
+            <h4 style="background-color:lightgreen;
+                width: 100%;margin: 0 auto;
+                padding: 1px">
+                <p><br>Available Veggies </p>
+            </h4><br>
+
+
+            <div class="info">
+                <button type="button" class="btn btn-success">Cart <span class="badge"></span></button>
+            </div><br>
+
+            <style>
+                .info {
+                    text-align: right;
+                    padding: 14px 14px;
+                }
+            </style>
+
+            <div class="row">
+                <div class="col-sm-3 col-md-2"><input type="image" th:src="@{/images/potato.jpg}" / width="72"
+                        height="72">
+                    <p>Potato<br>Rs.40/kg<br>
+                        <input type="submit" value="Add to cart" />
+                    </p>
+                </div>
+
+
+                <div class="col-sm-3 col-md-2"> <input type="image" th:src="@{/images/carrot.jpg}" / alt="Submit"
+                        width="72" height="72">
+                    <p>Carrot<br>Rs.60/kg<br>
+                        <input type="submit" value="Add to cart " /><br>
+                    <p>
+                </div>
+
+
+                <div class="col-sm-3 col-md-2"> <input type="image" th:src="@{/images/onion.jpg}" / alt="Submit"
+                        width="72" height="72" />
+                    <p>Onion<br>Rs.50/kg<br>
+                        <input type="submit" value="Add to cart " />
+                    </p>
+                </div>
+
+
+
+                <div class="col-sm-3 col-md-2"> <input type="image" th:src="@{/images/coriander.jpg}" / alt="Submit"
+                        width="72" height="72" />
+                    <p>Coriander<br>Rs.10/pc<br>
+                        <input type="submit" value="Add to cart " />
+                    </p>
+                </div>
+
+
+
+                <div class="col-sm-3 col-md-2"><input type="image" th:src="@{/images/ginger.jpg}" / width="72"
+                        height="72">
+                    <p>Ginger<br>Rs.20/100gms<br>
+                        <input type="submit" value="Add to cart " />
+                    </p>
+                </div>
+
+
+                <div class="col-sm-3 col-md-2"> <input type="image" th:src="@{/images/raddish.jpg}" / alt="Submit"
+                        width="72" height="72">
+                    <p>Raddish<br>Rs.45/kg<br>
+                        <input type="submit" value="Add to cart " /><br>
+                    <p>
+                </div><br>
+
+
+                <div class="col-sm-3 col-md-2"> <input type="image" th:src="@{/images/lady finger.jpg}" / alt="Submit"
+                        width="72" height="72" />
+                    <p>Lady finger<br>Rs.80/kg<br>
+                        <input type="submit" value="Add to cart " />
+                    </p>
+                </div>
+
+
+                <div class="col-sm-3 col-md-2"> <input type="image" th:src="@{/images/cucumber.jpg}" / alt="Submit"
+                        width="72" height="72" />
+                    <p>Cucumber<br>Rs70/kg<br>
+                        <input type="submit" value="Add to cart " />
+                    </p>
+                </div>
+
+
+                <div class="col-sm-3 col-md-2"> <input type="image" th:src="@{/images/lemon.jpg}" / alt="Submit"
+                        width="72" height="72" />
+                    <p>Lemon<br>Rs.10/3pc<br>
+                        <input type="submit" value="Add to cart " />
+                    </p>
+                </div>
+            </div>
+            <br><br>
+
+            <p style="background-color:yellow;
+                          width: 45%;
+                          margin: 0 auto;
+                          border: 2px solid black;
+                          padding: 1px;">shop for 150 more & get 10% off</p><br>
+
+            <a th:href="@{/checkout}" class="btn btn-success" style="text-align: right">proceed to check-out</a>
+            <script src="index.js"></script>
+
+</body>
+
+</html>
